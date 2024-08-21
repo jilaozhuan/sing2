@@ -28,6 +28,22 @@
       "tcp_fast_open": true,
       "tcp_multi_path": false,
       "udp_fragment": true
+    },
+    {
+      "stack": "system",
+      "auto_route": true,
+      "inet4_address": "172.19.0.1/30",
+      "mtu": 9000,
+      "sniff": true,
+      "strict_route": true,
+      "type": "tun",
+      "platform": {
+        "http_proxy": {
+          "enabled": true,
+          "server": "127.0.0.1",
+          "server_port": 20125
+        }
+      }
     }
   ],
   "outbounds": [
